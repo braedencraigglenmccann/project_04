@@ -37,9 +37,10 @@ app.getLyrics = $.ajax({
 });
 
 $('.begin-button').on('click', function() {
-    app.userArtist = ;
+    app.userArtist = $('#user-artist').val();
+    app.userTrack = $('#user-track').val();
+    console.log(app.userArtist, app.userTrack);
 })
-
 // $.when(app.getTrack)
 //     .then(app.getLyrics) => {
 //     console.log(app.getLyrics)
