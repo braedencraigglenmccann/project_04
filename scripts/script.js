@@ -19,7 +19,10 @@ app.getTrack = $.ajax({
         q_artist: app.userArtist
     }
 }).then(function (response) {
-    const app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
+    app.trackGenre = response.message.body.track_list[0];
+
+
+        // .primary_genres.music_genre_list[0].music_genre_name;
     console.log(app.trackGenre);
 })
 
@@ -29,14 +32,14 @@ app.getLyrics = $.ajax({
     method: 'GET',
     dataType: 'jsonp'
 }).then(function (response) {
-    const app.finalLyrics = response.message.body.lyrics.lyrics_body;
+    app.finalLyrics = response.message.body.lyrics.lyrics_body;
     console.log(app.finalLyrics)
 })
 
-$.when(app.getTrack)
-    .then(app.getLyrics) => {
-    console.log(app.getLyrics)
-});
+// $.when(app.getTrack)
+//     .then(app.getLyrics) => {
+//     console.log(app.getLyrics)
+// });
 
 // TESTING COMMENT
 
