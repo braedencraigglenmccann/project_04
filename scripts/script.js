@@ -35,16 +35,11 @@ app.getLyrics = () => {
     }).then(function (response) {
         app.finalLyrics = response.lyrics;
         console.log(app.finalLyrics)
+        $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
     });
 } 
 
-$('.begin-button').on('click', function () {
-    app.userArtist = $('#user-artist').val();
-    app.userTrack = $('#user-track').val();
-    // console.log(app.userArtist, app.userTrack);
-    app.getTrack();
-    app.getLyrics();
-})
+
 
 // $.when(app.getTrack)
 //     .then(app.getLyrics) => {
@@ -53,5 +48,23 @@ $('.begin-button').on('click', function () {
 
 // TESTING COMMENT
 
+
+$(function(){
+
+    $('.begin-button').on('click', function () {
+        app.userArtist = $('#user-artist').val();
+        app.userTrack = $('#user-track').val();
+        // console.log(app.userArtist, app.userTrack);
+        app.getTrack();
+        app.getLyrics();
+
+        $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
+
+    })
+
+    
+
+
+})
 
 
