@@ -14,18 +14,18 @@ app.getTrack = () => {
         data: {
             apikey: app.apiKey,
             format: 'jsonp',
-            q_track: 'Bohemian Rhapsody',
-            q_artist: 'Queen',
+            q_track: app.userTrack,
+            q_artist: app.userArtist,
             f_has_lyrics: '1',
             s_track_rating: 'desc'
         }
     })
     .then(function(response) {
-        console.log(response);
+        // console.log(response);
         // console.log('success');
-        app.trackGenre = response.message.body;
+        app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
         // .primary_genres.music_genre_list[0].music_genre_name;
-        // console.log(app.trackGenre);
+        console.log(app.trackGenre);
     })
 
 }
