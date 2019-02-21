@@ -21,23 +21,19 @@ app.getTrack = () => {
         }
     })
     .then(function(response) {
-        // console.log(response);
-        // console.log('success');
         app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
-        // .primary_genres.music_genre_list[0].music_genre_name;
         console.log(app.trackGenre);
-    })
-
+    });
 }
 
 // call to get lyrics 
 app.getLyrics = () => {
     $.ajax({
-        url: `app.lyricUrl/${app.userArtist}/${app.userTrack}`,
+        url: `${app.lyricUrl}${app.userArtist}/${app.userTrack}`,
         method: 'GET',
-        dataType: 'jsonp'
+        dataType: 'json'
     }).then(function (response) {
-        app.finalLyrics = response.message.body.lyrics.lyrics_body;
+        app.finalLyrics = response.lyrics;
         console.log(app.finalLyrics)
     });
 } 
@@ -46,10 +42,10 @@ $('.begin-button').on('click', function () {
     app.userArtist = $('#user-artist').val();
     app.userTrack = $('#user-track').val();
     // console.log(app.userArtist, app.userTrack);
-
-
     app.getTrack();
+    app.getLyrics();
 })
+
 // $.when(app.getTrack)
 //     .then(app.getLyrics) => {
 //     console.log(app.getLyrics)
