@@ -19,7 +19,7 @@ app.getTrack = $.ajax({
         q_artist: app.userArtist
     }
 }).then(function (response) {
-    app.trackGenre = response.message.body.track_list[0];
+    app.trackGenre = response.message.body.track_list[0]
 
 
         // .primary_genres.music_genre_list[0].music_genre_name;
@@ -28,12 +28,16 @@ app.getTrack = $.ajax({
 
 // call to get lyrics 
 app.getLyrics = $.ajax({
-    url: `app.lyricUrl${app.userArtist}/${app.userTrack}`,
+    url: `app.lyricUrl/${app.userArtist}/${app.userTrack}`,
     method: 'GET',
     dataType: 'jsonp'
 }).then(function (response) {
     app.finalLyrics = response.message.body.lyrics.lyrics_body;
     console.log(app.finalLyrics)
+});
+
+$('.begin-button').on('click', function() {
+    app.userArtist = ;
 })
 
 // $.when(app.getTrack)
