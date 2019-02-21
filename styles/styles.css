@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hero h1 {
+    margin-top: 5%;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5% 20%;
+}
+
+.show-lyrics { 
+    text-align: center;
+    padding: 2%;
+}
+
+.results {
+    border: 2px solid black;
+    height: 75vh;
+    width: 75%;
+    /* overflow: auto; */
+    overflow: scroll;
+}
+
+.submit {
+    text-align: center;
+    padding: 5%;
+}
+
+footer {
+    text-align: center;
+}
+
+svg {
+    width: 150px;
+}
+

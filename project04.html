@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karaoke Lyrics</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="wrapper hero">
+        <div class="hero-text">
+            <h1>Karaoke Lyric Generator</h1>
+        </div>
+    </header>
+    <main>
+        <section class="wrapper show-lyrics">
+            <div class="lyric-search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px">
+                    <g>
+                        <path d="M42,8V6c-4.233,0-7.078,3.215-7.078,8h2C36.922,11.232,38.252,8,42,8Z"></path>
+                        <rect x="28.5" y="23.379" width="2" height="4.243" transform="translate(-9.391 28.328) rotate(-45)"></rect>
+                        <path
+                            d="M29,62V35.319L42.33,23.806A10.9,10.9,0,1,0,31.194,12.671L14.4,32.118l-3.509,3.509,3.121,3.121A5.1,5.1,0,0,0,11,43.182V62h2V43.182c0-1.6,1.542-2.522,2.5-2.939l3.87,3.869L22.882,40.6,23,40.5V62Zm-2-2H25V38.774l2-1.727ZM42.091,4a8.909,8.909,0,1,1-8.909,8.909A8.92,8.92,0,0,1,42.091,4ZM31.479,15.4A10.933,10.933,0,0,0,39.6,23.521L22.251,38.506l-5.757-5.757ZM19.373,41.284l-5.657-5.657,1.414-1.414,5.657,5.657Z">
+                        </path>
+                        <path
+                            d="M54,37.184V28.612L43,32.279v6.9a3,3,0,1,0,2,0V37.72l7-2.333v1.8a3,3,0,1,0,2,0ZM44,43a1,1,0,1,1,1-1A1,1,0,0,1,44,43Zm1-7.387V33.721l7-2.333V33.28ZM53,41a1,1,0,1,1,1-1A1,1,0,0,1,53,41Z">
+                        </path>
+                        <path
+                            d="M14,20a3,3,0,0,0-2-2.816V12.659l7-3V3.483L10,7.341v9.843A2.995,2.995,0,1,0,14,20ZM12,8.659l5-2.142V8.341l-5,2.142ZM10,20a1,1,0,1,1,1,1A1,1,0,0,1,10,20Z">
+                        </path>
+                        <polygon
+                            points="56 3.382 56 7.382 54.553 8.105 55.447 9.895 58 8.618 58 4.618 59.447 3.895 58.553 2.105 56 3.382">
+                        </polygon>
+                    </g>
+                </svg>
+                <form action="submit">
+                    <label for="text"></label>
+                    <input type="search" value="search for song title here" id="search-lyrics" onfocus="this.value=''" size="55">
+                    <label for="text"></label>
+                    <input type="search" value="search for song artist here" id="search-lyrics" onfocus="this.value=''" size="55">
+                </form>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100"
+                    viewBox="0 0 100 100">
+                    <g>
+                        <g transform="translate(50 50) scale(-0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#000000"><svg
+                                fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px">
+                                <g>
+                                    <path d="M42,8V6c-4.233,0-7.078,3.215-7.078,8h2C36.922,11.232,38.252,8,42,8Z"></path>
+                                    <rect x="28.5" y="23.379" width="2" height="4.243" transform="translate(-9.391 28.328) rotate(-45)">
+                                    </rect>
+                                    <path
+                                        d="M29,62V35.319L42.33,23.806A10.9,10.9,0,1,0,31.194,12.671L14.4,32.118l-3.509,3.509,3.121,3.121A5.1,5.1,0,0,0,11,43.182V62h2V43.182c0-1.6,1.542-2.522,2.5-2.939l3.87,3.869L22.882,40.6,23,40.5V62Zm-2-2H25V38.774l2-1.727ZM42.091,4a8.909,8.909,0,1,1-8.909,8.909A8.92,8.92,0,0,1,42.091,4ZM31.479,15.4A10.933,10.933,0,0,0,39.6,23.521L22.251,38.506l-5.757-5.757ZM19.373,41.284l-5.657-5.657,1.414-1.414,5.657,5.657Z">
+                                    </path>
+                                    <path
+                                        d="M54,37.184V28.612L43,32.279v6.9a3,3,0,1,0,2,0V37.72l7-2.333v1.8a3,3,0,1,0,2,0ZM44,43a1,1,0,1,1,1-1A1,1,0,0,1,44,43Zm1-7.387V33.721l7-2.333V33.28ZM53,41a1,1,0,1,1,1-1A1,1,0,0,1,53,41Z">
+                                    </path>
+                                    <path
+                                        d="M14,20a3,3,0,0,0-2-2.816V12.659l7-3V3.483L10,7.341v9.843A2.995,2.995,0,1,0,14,20ZM12,8.659l5-2.142V8.341l-5,2.142ZM10,20a1,1,0,1,1,1,1A1,1,0,0,1,10,20Z">
+                                    </path>
+                                    <polygon
+                                        points="56 3.382 56 7.382 54.553 8.105 55.447 9.895 58 8.618 58 4.618 59.447 3.895 58.553 2.105 56 3.382">
+                                    </polygon>
+                                </g>
+                            </svg></g>
+                    </g>
+                </svg>
+            </div>
+            <div class="submit begin-button">
+                <input type="button" value="Pick a song" aria-label="Select a song for the lyric generator">
+            </div>
+        </section>
+        <section class="wrapper results">
+            <div class="karaoke-lyrics">
+
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="submit reset-button">
+                <input type="submit" id="reset-form" value="Sing another song" aria-label="Restart the lyric generator">
+            </div>
+        </section>
+    </main>
+    <footer class="wrapper">
+        <div class="footer-text">
+            <p>This project brought to you by G & B</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
