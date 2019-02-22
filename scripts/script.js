@@ -4,6 +4,7 @@ const app = {};
 app.trackUrl = 'https://api.musixmatch.com/ws/1.1/track.search';
 app.lyricUrl = 'https://api.lyrics.ovh/v1/';
 app.apiKey = '004fc1c5222f94cf5c07c80c81fa2f62';
+app.trackGenre = 'default-styles';
 
 //call to get genre
 app.getTrack = () => {
@@ -20,10 +21,11 @@ app.getTrack = () => {
             s_track_rating: 'desc'
         }
     })
-    .then(function(response) {
-        app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
-        console.log(app.trackGenre);
-    });
+        .then(function (response) {
+            response.isSuccessful()
+                app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
+                console.log(app.trackGenre);
+        });
 }
 
 // call to get lyrics 
@@ -34,31 +36,36 @@ app.getLyrics = () => {
         dataType: 'json'
     }).then(function (response) {
         app.finalLyrics = response.lyrics;
-        console.log(app.finalLyrics)
-        $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
+        console.log(response.status);
+        console.log(app.finalLyrics);
+        if (response.lyrics) {
+            $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
+        } else {
+            $('.results').html(`<p class="lyrics">Something went wrong! It looks like we can't find lyrics for that song, please try another or try being more specific in your search!</p>`);
+        }
     });
-} 
+}
 
+app.styleReset = () => {
+    $('.genre-class').removeClass(`${app.trackGenre}`);
+    app.trackGenre = 'default-styles';
+    $('.genre-class').addClass(`${app.trackGenre}`);
+}
 
+app.newStyles = () => {
+    $('.genre-class').addClass(`${app.trackGenre}`);
+}
 
-// $.when(app.getTrack)
-//     .then(app.getLyrics) => {
-//     console.log(app.getLyrics)
-// });
-
-// TESTING COMMENT
-
-
-$(function(){
-
+$(function () {
     $('.begin-button').on('click', function () {
         app.userArtist = $('#user-artist').val();
         app.userTrack = $('#user-track').val();
-        // console.log(app.userArtist, app.userTrack);
-        app.getTrack();
-        app.getLyrics();
 
-        $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
+        app.getLyrics();
+        app.getTrack();
+        app.styleReset();
+        app.newStyles();
+
         $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
         return false;
 
@@ -67,7 +74,7 @@ $(function(){
     $('.bottom').click(function () {
         $(this).scrollTop(0);
         $('#reset').trigger('reset');
-       
+
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
     });
@@ -75,10 +82,9 @@ $(function(){
     $("#reset-form").bind("click", function () {
         $("input[type=text]").val("");
         $('.results').html(`<p class="lyrics"> </p>`);
+
+        app.styleReset();
     });
-
-    
-
 
 });
 
