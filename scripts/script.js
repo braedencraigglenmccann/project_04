@@ -5,6 +5,7 @@ app.trackUrl = 'https://api.musixmatch.com/ws/1.1/track.search';
 app.lyricUrl = 'https://api.lyrics.ovh/v1/';
 app.apiKey = '004fc1c5222f94cf5c07c80c81fa2f62';
 
+
 //call to get genre
 app.getTrack = () => {
     $.ajax({
@@ -59,15 +60,15 @@ $(function(){
         app.getLyrics();
 
         $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
-        $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
-        return false;
+        $('.results').animatescroll();
+        // $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+        // return false;
 
     });
 
     $('.bottom').click(function () {
         $(this).scrollTop(0);
         $('#reset').trigger('reset');
-       
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
     });
