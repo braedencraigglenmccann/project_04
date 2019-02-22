@@ -1,3 +1,8 @@
+
+// FONT LEGEND
+    // font-family: 'Luckiest Guy', cursive;
+    // font-family: 'Muli', sans-serif;
+
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,22 +10,30 @@
 }
 
 .hero h1 {
-    margin-top: 5%;
+    padding-top: 12%;
     text-align: center;
-    border: 2px solid black;
     margin: 5% 20%;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 3px;
+    font-size: 6rem;
 }
 
 .show-lyrics { 
     text-align: center;
     padding: 2%;
+
+    input {
+        background: blue;
+        
+    }
 }
 
 .results {
-    border: 2px solid black;
+    margin-top: 5%;
+    border: 5px solid black;
+    border-radius: 25px;
     height: 75vh;
     width: 75%;
-    /* overflow: auto; */
     overflow: scroll;
 }
 
@@ -37,3 +50,34 @@ svg {
     width: 150px;
 }
 
+.input-style {
+    border: none;
+    border-bottom: 5px solid #F00;
+    font-size: 2rem;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+}
+
+.input-style::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.input-style:hover::after{
+    width: 100%;
+    // transition: width .3s;
+}
+
+.lyrics {
+    white-space: pre-line;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6rem;
+}
+
+input .submit {
+    background: blue;
+}
