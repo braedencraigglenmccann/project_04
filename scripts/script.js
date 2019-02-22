@@ -22,9 +22,12 @@ app.getTrack = () => {
         }
     })
         .then(function (response) {
-            response.isSuccessful()
-                app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
-                console.log(app.trackGenre);
+            // if (response.message.body.track_list[0]) {
+            //     app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
+            //     // console.log(app.trackGenre);
+            // } else {
+            //     app.trackGenre = 'default-styles';
+            // }
         });
 }
 
@@ -35,12 +38,14 @@ app.getLyrics = () => {
         method: 'GET',
         dataType: 'json'
     }).then(function (response) {
+        console.log(response);
         app.finalLyrics = response.lyrics;
-        console.log(response.status);
-        console.log(app.finalLyrics);
-        if (response.lyrics) {
+        if (response.lyrics != '') {
+            console.log('success')
             $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
         } else {
+            console.log.log('failure');
+
             $('.results').html(`<p class="lyrics">Something went wrong! It looks like we can't find lyrics for that song, please try another or try being more specific in your search!</p>`);
         }
     });
@@ -61,8 +66,8 @@ $(function () {
         app.userArtist = $('#user-artist').val();
         app.userTrack = $('#user-track').val();
 
-        app.getLyrics();
         app.getTrack();
+        app.getLyrics();
         app.styleReset();
         app.newStyles();
 
