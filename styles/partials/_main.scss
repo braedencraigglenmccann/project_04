@@ -1,0 +1,46 @@
+// SITE STYLING DEFAULTS
+
+*  {
+    padding: 0;
+    margin: 0;  
+}
+
+html {
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    margin: 0 auto;      
+    max-width: 1600px;
+}
+
+img {
+    width: 100%;
+}
+
+ .skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: #FFF;
+    color: #000;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) { 
+	position: absolute; 
+	width: 0px; 
+	height: 1px; 
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(00 0 0);
+	overflow: hidden;
+}

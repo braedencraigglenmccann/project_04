@@ -6,6 +6,7 @@ app.lyricUrl = 'https://api.lyrics.ovh/v1/';
 app.apiKey = '004fc1c5222f94cf5c07c80c81fa2f62';
 app.trackGenre = 'default-styles';
 
+
 //call to get genre
 app.getTrack = () => {
     $.ajax({
@@ -71,8 +72,8 @@ $(function () {
         app.styleReset();
         app.newStyles();
 
-        $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
-        return false;
+
+        $('.results').animatescroll();
 
     });
 
