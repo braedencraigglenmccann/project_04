@@ -12,14 +12,24 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
 .hero h1 {
-    padding-top: 12%;
+    padding-top: 10%;
     color: #000;
     text-align: center;
-    margin: 5% 20%;
+    margin: 2% 20%;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 3px;
-    font-size: 6rem;
+    font-size: 5rem;
     text-shadow: 5px 5px #d9534f;
 }
 
@@ -55,10 +65,14 @@ svg {
     border-bottom: 5px solid #000;
     font-size: 2rem;
     width: calc(50% - 20px);
-    margin: 0 10px;
+    margin: 10px;
     background: none;
     font-family: "Muli", sans-serif;
-    
+}
+
+.input-style:focus {
+    border: 5px solid #000;
+
 }
 
 .input-style::after {
@@ -112,7 +126,8 @@ body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, rgb(233, 134, 104), rgb(201, 93, 146), rgb(71, 171, 207), rgb(69, 206, 174));
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -162,5 +177,8 @@ body {
     padding: 0 3%;
 }
 
+.input-style {
+    margin-bottom: 2%;
+}
 
 
