@@ -6,9 +6,8 @@ app.lyricUrl = 'https://api.lyrics.ovh/v1/';
 app.apiKey = '004fc1c5222f94cf5c07c80c81fa2f62';
 app.trackGenre = 'default-styles';
 
-
 //call to get genre
-app.getTrack = () => {
+app.getGenre = () => {
     $.ajax({
         url: app.trackUrl,
         method: 'GET',
@@ -23,35 +22,42 @@ app.getTrack = () => {
         }
     })
         .then(function (response) {
-            // if (response.message.body.track_list[0]) {
-            //     app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
-            //     // console.log(app.trackGenre);
-            // } else {
-            //     app.trackGenre = 'default-styles';
-            // }
+            if (response.message.body.track_list[0]) {
+                app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
+            } else {
+                console.log('Genre search failed');
+                app.trackGenre = 'default-styles';
+            }
         });
 }
 
 // call to get lyrics 
 app.getLyrics = () => {
+    app.finalLyrics = '';
+
     $.ajax({
         url: `${app.lyricUrl}${app.userArtist}/${app.userTrack}`,
         method: 'GET',
         dataType: 'json'
     }).then(function (response) {
-        console.log(response);
         app.finalLyrics = response.lyrics;
-        if (response.lyrics != '') {
-            console.log('success')
-            $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
-        } else {
-            console.log.log('failure');
-
-            $('.results').html(`<p class="lyrics">Something went wrong! It looks like we can't find lyrics for that song, please try another or try being more specific in your search!</p>`);
-        }
+        app.printLyrics();
     });
+
+    app.printLyrics();
 }
 
+// function for putting the new lyrics on the page
+app.printLyrics = () => {
+    $('p.lyrics').text('');
+    if (app.finalLyrics !== '') {
+        $('p.lyrics').html(`${app.finalLyrics}`);
+    } else {
+        $('p.lyrics').append(`It looks like something went wrong! Please try a different search.`);
+    }
+}
+
+// functions to initiate style changes based on genre
 app.styleReset = () => {
     $('.genre-class').removeClass(`${app.trackGenre}`);
     app.trackGenre = 'default-styles';
@@ -62,21 +68,25 @@ app.newStyles = () => {
     $('.genre-class').addClass(`${app.trackGenre}`);
 }
 
+// document ready
 $(function () {
+    // 'Pick a Song' button event listening
     $('.begin-button').on('click', function () {
+        // get user search parameters from form
         app.userArtist = $('#user-artist').val();
         app.userTrack = $('#user-track').val();
 
-        app.getTrack();
+        // make API requests for genre and lyrics based on user search
+        app.getGenre();
         app.getLyrics();
-        app.styleReset();
-        app.newStyles();
+        // app.styleReset();
+        // app.newStyles();
 
-
+        // scroll to lyrics section
         $('.results').animatescroll();
-
     });
 
+    // event listener for 'sing another song' button
     $('.bottom').click(function () {
         $(this).scrollTop(0);
         $('#reset').trigger('reset');
