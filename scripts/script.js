@@ -5,6 +5,7 @@ app.trackUrl = 'https://api.musixmatch.com/ws/1.1/track.search';
 app.lyricUrl = 'https://api.lyrics.ovh/v1/';
 app.apiKey = '004fc1c5222f94cf5c07c80c81fa2f62';
 app.trackGenre = 'default-styles';
+// app.finalLyrics = '';
 
 
 //call to get genre
@@ -34,22 +35,27 @@ app.getTrack = () => {
 
 // call to get lyrics 
 app.getLyrics = () => {
+    app.finalLyrics = '';
+
     $.ajax({
         url: `${app.lyricUrl}${app.userArtist}/${app.userTrack}`,
         method: 'GET',
         dataType: 'json'
     }).then(function (response) {
-        console.log(response);
         app.finalLyrics = response.lyrics;
-        if (response.lyrics != '') {
-            console.log('success')
-            $('.results').html(`<p class="lyrics">${app.finalLyrics}</p>`);
-        } else {
-            console.log.log('failure');
-
-            $('.results').html(`<p class="lyrics">Something went wrong! It looks like we can't find lyrics for that song, please try another or try being more specific in your search!</p>`);
-        }
+        app.printLyrics();
     });
+
+    app.printLyrics();
+}
+
+app.printLyrics = () => {
+    $('p.lyrics').text('');
+    if (app.finalLyrics !== '') {
+        $('p.lyrics').html(`${app.finalLyrics}`);
+    } else {
+        $('p.lyrics').append(`It looks like something went wrong! Please try a different search.`);
+    }
 }
 
 app.styleReset = () => {
@@ -67,14 +73,16 @@ $(function () {
         app.userArtist = $('#user-artist').val();
         app.userTrack = $('#user-track').val();
 
-        app.getTrack();
+        // app.getTrack();
         app.getLyrics();
-        app.styleReset();
-        app.newStyles();
-
-
+        // app.styleReset();
+        // app.newStyles();
+        
+        
+        
         $('.results').animatescroll();
-
+        
+        // app.printLyrics();
     });
 
     $('.bottom').click(function () {
