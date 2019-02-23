@@ -165,6 +165,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 footer p {
   padding: 30px 0px 20px 0px;
+  font-family: 'Muli', sans-serif;
   text-align: center;
   color: black; }
 
