@@ -30,6 +30,10 @@
     .results {
         width: 85%;
     }
+
+    .input-style {
+        width: 65%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -45,14 +49,13 @@
     }
 }
 
-@media(max-width: 430px) {
+@media(max-width: 470px) {
 
     .hero h1 {
         font-size: 2.2rem;
     }
 
-    .input-style {
-        // width: 50%;
+    form div label {
+        font-size: 1rem;
     }
-    
 }
