@@ -24,8 +24,8 @@ app.getGenre = () => {
         .then(function (response) {
             if (response.message.body.track_list[0]) {
                 app.trackGenre = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
-                console.log(app.trackGenre);
             } else {
+                console.log('Genre search failed');
                 app.trackGenre = 'default-styles';
             }
         });
