@@ -66,7 +66,33 @@ svg {
 
 .input-style:focus {
     border: 5px solid #000;
+}
 
+form {
+    div {
+        margin-bottom: 25px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        label {
+            // position: absolute;
+            bottom: 0;
+            width: calc(50% - 20px);
+            font-family: "Muli", sans-serif;
+            color: black;
+            top: -25px;
+            left: 100px;
+            font-size: 1rem;
+        }
+    }
+}
+
+input:focus + label,{
+    color: black;
+    top: -25px;
+    left: 100px;
+    font-size: 1rem;
 }
 
 .input-style::after {
