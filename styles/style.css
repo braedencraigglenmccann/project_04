@@ -137,20 +137,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
   padding: 0; }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
-
 .hero h1 {
   padding-top: 10%;
   color: #000;
   text-align: center;
-  margin: 2% 20%;
+  margin: 2% 10%;
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 3px;
   font-size: 5rem;
@@ -165,7 +156,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 5px solid black;
   border-radius: 25px;
   height: 65vh;
-  width: 60%;
+  width: 70%;
   overflow: scroll; }
 
 .submit {
@@ -314,6 +305,39 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden; }
+
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.8rem; } }
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 3rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.4rem; }
+  .results {
+    width: 85%; } }
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.2rem; } }
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 2.2rem; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -454,20 +478,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
   padding: 0; }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
-
 .hero h1 {
   padding-top: 10%;
   color: #000;
   text-align: center;
-  margin: 2% 20%;
+  margin: 2% 10%;
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 3px;
   font-size: 5rem;
@@ -482,7 +497,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 5px solid black;
   border-radius: 25px;
   height: 65vh;
-  width: 60%;
+  width: 70%;
   overflow: scroll; }
 
 .submit {
@@ -631,6 +646,39 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden; }
+
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.8rem; } }
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 3rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.4rem; }
+  .results {
+    width: 85%; } }
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.2rem; } }
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 2.2rem; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -771,20 +819,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
   padding: 0; }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
-
 .hero h1 {
   padding-top: 10%;
   color: #000;
   text-align: center;
-  margin: 2% 20%;
+  margin: 2% 10%;
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 3px;
   font-size: 5rem;
@@ -799,7 +838,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 5px solid black;
   border-radius: 25px;
   height: 65vh;
-  width: 60%;
+  width: 70%;
   overflow: scroll; }
 
 .submit {
@@ -948,3 +987,36 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden; }
+
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.8rem; } }
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 3rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.4rem; }
+  .results {
+    width: 85%; } }
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.4rem; }
+  .input-style,
+  #get-lyrics,
+  #reset-form,
+  p.lyrics {
+    font-size: 1.2rem; } }
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 2.2rem; } }

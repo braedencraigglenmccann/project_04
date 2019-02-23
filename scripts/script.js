@@ -70,6 +70,7 @@ app.newStyles = () => {
 
 // document ready
 $(function () {
+    
     // 'Pick a Song' button event listening
     $('.begin-button').on('click', function () {
         // get user search parameters from form

@@ -1,0 +1,58 @@
+@media (max-width: 1000px) {
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .input-style,
+    #get-lyrics,
+    #reset-form,
+    p.lyrics {
+        font-size: 1.8rem;
+    }
+
+    
+
+}
+
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .input-style,
+    #get-lyrics,
+    #reset-form,
+    p.lyrics {
+        font-size: 1.4rem;
+    }
+
+    .results {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .input-style,
+    #get-lyrics,
+    #reset-form,
+    p.lyrics {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 430px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .input-style {
+        // width: 50%;
+    }
+    
+}

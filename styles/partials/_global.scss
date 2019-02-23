@@ -12,21 +12,12 @@
     padding: 0;
 }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-}
 
 .hero h1 {
     padding-top: 10%;
     color: #000;
     text-align: center;
-    margin: 2% 20%;
+    margin: 2% 10%;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 3px;
     font-size: 5rem;
@@ -43,7 +34,7 @@
     border: 5px solid black;
     border-radius: 25px;
     height: 65vh;
-    width: 60%;
+    width: 70%;
     overflow: scroll;
 }
 
