@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Karaoke Lyrics</title>
-
+    <!-- FAVICON -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Muli" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -36,8 +37,8 @@
                 <input type="submit" id="get-lyrics" value="Pick a song" aria-label="Select a song for the lyric generator">
             </div>
         </section>
-        <section class="wrapper results">
-            <div class="karaoke-lyrics">
+        <section class="wrapper results" data-simplebar data-simplebar-auto-hide="false">
+            <div class="karaoke-lyrics" >
                 <p class="lyrics"></p>
             </div>
         </section>
@@ -54,8 +55,13 @@
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
     <script src="scripts/animatescroll.js"></script>
     <script src="scripts/script.js"></script>
     
 </body>
 </html>
+
+
+
+
