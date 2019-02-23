@@ -14,7 +14,7 @@
 
 
 .hero h1 {
-    padding-top: 10%;
+    padding-top: 5%;
     color: #000;
     text-align: center;
     margin: 2% 10%;
@@ -51,7 +51,9 @@ footer p {
 }
 
 svg {
-    width: 150px;
+    width: 350px;
+   position: relative;
+   bottom: 100px;
 }
 
 .input-style {
@@ -199,3 +201,12 @@ input:focus + label,{
     font-size: 1rem;
 }
 
+.lyric-search {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.input-style {
+    width: 90%;
+}

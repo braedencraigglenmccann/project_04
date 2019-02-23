@@ -138,7 +138,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 .hero h1 {
-  padding-top: 10%;
+  padding-top: 5%;
   color: #000;
   text-align: center;
   margin: 2% 10%;
@@ -170,7 +170,9 @@ footer p {
   color: black; }
 
 svg {
-  width: 150px; }
+  width: 350px;
+  position: relative;
+  bottom: 100px; }
 
 .input-style {
   border: none;
@@ -297,6 +299,17 @@ input:focus + label {
   top: -25px;
   left: 100px;
   font-size: 1rem; }
+
+.lyric-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 10%; }
+
+.input-style {
+  width: 90%; }
 
 * {
   padding: 0;
@@ -515,7 +528,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 .hero h1 {
-  padding-top: 10%;
+  padding-top: 5%;
   color: #000;
   text-align: center;
   margin: 2% 10%;
@@ -547,7 +560,9 @@ footer p {
   color: black; }
 
 svg {
-  width: 150px; }
+  width: 350px;
+  position: relative;
+  bottom: 100px; }
 
 .input-style {
   border: none;
@@ -674,6 +689,17 @@ input:focus + label {
   top: -25px;
   left: 100px;
   font-size: 1rem; }
+
+.lyric-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 10%; }
+
+.input-style {
+  width: 90%; }
 
 * {
   padding: 0;
@@ -892,7 +918,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 .hero h1 {
-  padding-top: 10%;
+  padding-top: 5%;
   color: #000;
   text-align: center;
   margin: 2% 10%;
@@ -924,7 +950,9 @@ footer p {
   color: black; }
 
 svg {
-  width: 150px; }
+  width: 350px;
+  position: relative;
+  bottom: 100px; }
 
 .input-style {
   border: none;
@@ -1051,6 +1079,17 @@ input:focus + label {
   top: -25px;
   left: 100px;
   font-size: 1rem; }
+
+.lyric-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 10%; }
+
+.input-style {
+  width: 90%; }
 
 * {
   padding: 0;
