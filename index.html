@@ -12,14 +12,23 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
     <a href="#main-content" class="skip-link">Skip to main content.</a>
     
+    <!-- HEADER BEGINS -->
+
     <header class="wrapper hero">
         <div class="hero-text">
             <h1>Karaoke Lyric Generator</h1>
         </div>
     </header>
+
+    <!-- MAIN BEGINS -->
+
     <main>
+
+        <!-- SECTION SHOW LYRICS -->
+
         <section class="wrapper show-lyrics" id="main-content">
             <div class="lyric-search">
                 <div class="genre-SVG">
@@ -41,8 +50,9 @@
                         </path>
                         <rect x="31" y="35" width="2" height="2"></rect>
                     </svg>
-
                 </div>
+
+                <!-- FORM FOR SONG SUBMISSION BEGINS -->
         
                 <form action="submit">
                     <div>
@@ -55,7 +65,6 @@
                     </div>
                 </form>
 
-                
                 <div class="genre-SVG">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px">
                         <path
@@ -75,38 +84,47 @@
                         </path>
                         <rect x="31" y="35" width="2" height="2"></rect>
                     </svg>
-
-                    </div>
-
-                
-
+                </div>
             </div>
+
+            <!-- SONG SUBMIT BUTTON BEGINS -->
+
             <div class="submit begin-button">
                 <input type="submit" id="get-lyrics" value="Pick a song" aria-label="Select a song for the lyric generator">
             </div>
         </section>
+
+        <!-- RESULTS SECTION BEGINS -->
+
         <section class="wrapper results" data-simplebar data-simplebar-auto-hide="false">
             <div class="karaoke-lyrics" >
                 <p class="lyrics"></p>
             </div>
         </section>
+
+        <!-- RESET BUTTON BEGINS -->
+
         <section class="wrapper bottom">
             <div class="submit reset-button">
                 <input type="reset" id="reset-form" value="Sing another song" aria-label="Restart the lyric generator">
             </div>
         </section>
     </main>
+
+    <!-- FOOTER BEGINS -->
+
     <footer class="wrapper">
         <div class="footer-text">
             <p>This project brought to you by G & B</p>
         </div>
     </footer>
 
+    <!-- SCRIPT TAGS BEGIN -->
+
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
     <script src="scripts/animatescroll.js"></script>
     <script src="scripts/script.js"></script>
-    
 </body>
 </html>
 
