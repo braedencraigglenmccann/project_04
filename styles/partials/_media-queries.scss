@@ -1,4 +1,15 @@
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+    svg {
+        width: 220px;
+        bottom: 130px;
+    }
+
+    .lyric-search {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1040px) {
 
     .hero h1 {
         font-size: 4rem;
@@ -11,11 +22,14 @@
         font-size: 1.8rem;
     }
 
-    
+    svg {
+        width: 180px;
+        bottom: 90px;
+    }
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     .hero h1 {
         font-size: 3rem;
     }
@@ -34,6 +48,10 @@
     .input-style {
         width: 65%;
     }
+
+     svg {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -47,9 +65,11 @@
     p.lyrics {
         font-size: 1.2rem;
     }
+
+   
 }
 
-@media(max-width: 470px) {
+@media (max-width: 470px) {
 
     .hero h1 {
         font-size: 2.2rem;

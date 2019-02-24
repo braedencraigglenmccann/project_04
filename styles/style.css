@@ -161,7 +161,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .submit {
   text-align: center;
-  padding: 5%; }
+  padding: 2.5% 5% 5% 5%; }
+
+.reset-button {
+  padding: 5% 5% 2.5% 5%; }
 
 footer p {
   padding: 30px 0px 20px 0px;
@@ -170,9 +173,10 @@ footer p {
   color: black; }
 
 svg {
-  width: 350px;
+  width: 250px;
   position: relative;
-  bottom: 100px; }
+  bottom: 150px;
+  -webkit-filter: drop-shadow(4px 4px 1px #d9534f); }
 
 .input-style {
   border: none;
@@ -306,7 +310,7 @@ input:focus + label {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0 10%; }
+  margin: 0 3%; }
 
 .input-style {
   width: 90%; }
@@ -351,16 +355,26 @@ img {
   clip: rect(0 0 0);
   overflow: hidden; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  svg {
+    width: 220px;
+    bottom: 130px; }
+  .lyric-search {
+    margin: 0; } }
+
+@media (max-width: 1040px) {
   .hero h1 {
     font-size: 4rem; }
   .input-style,
   #get-lyrics,
   #reset-form,
   p.lyrics {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  svg {
+    width: 180px;
+    bottom: 90px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .hero h1 {
     font-size: 3rem; }
   .input-style,
@@ -371,7 +385,9 @@ img {
   .results {
     width: 85%; }
   .input-style {
-    width: 65%; } }
+    width: 65%; }
+  svg {
+    display: none; } }
 
 @media (max-width: 600px) {
   .hero h1 {
@@ -551,7 +567,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .submit {
   text-align: center;
-  padding: 5%; }
+  padding: 2.5% 5% 5% 5%; }
+
+.reset-button {
+  padding: 5% 5% 2.5% 5%; }
 
 footer p {
   padding: 30px 0px 20px 0px;
@@ -560,9 +579,10 @@ footer p {
   color: black; }
 
 svg {
-  width: 350px;
+  width: 250px;
   position: relative;
-  bottom: 100px; }
+  bottom: 150px;
+  -webkit-filter: drop-shadow(4px 4px 1px #d9534f); }
 
 .input-style {
   border: none;
@@ -696,7 +716,7 @@ input:focus + label {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0 10%; }
+  margin: 0 3%; }
 
 .input-style {
   width: 90%; }
@@ -741,16 +761,26 @@ img {
   clip: rect(0 0 0);
   overflow: hidden; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  svg {
+    width: 220px;
+    bottom: 130px; }
+  .lyric-search {
+    margin: 0; } }
+
+@media (max-width: 1040px) {
   .hero h1 {
     font-size: 4rem; }
   .input-style,
   #get-lyrics,
   #reset-form,
   p.lyrics {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  svg {
+    width: 180px;
+    bottom: 90px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .hero h1 {
     font-size: 3rem; }
   .input-style,
@@ -761,7 +791,9 @@ img {
   .results {
     width: 85%; }
   .input-style {
-    width: 65%; } }
+    width: 65%; }
+  svg {
+    display: none; } }
 
 @media (max-width: 600px) {
   .hero h1 {
@@ -941,7 +973,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .submit {
   text-align: center;
-  padding: 5%; }
+  padding: 2.5% 5% 5% 5%; }
+
+.reset-button {
+  padding: 5% 5% 2.5% 5%; }
 
 footer p {
   padding: 30px 0px 20px 0px;
@@ -950,9 +985,10 @@ footer p {
   color: black; }
 
 svg {
-  width: 350px;
+  width: 250px;
   position: relative;
-  bottom: 100px; }
+  bottom: 150px;
+  -webkit-filter: drop-shadow(4px 4px 1px #d9534f); }
 
 .input-style {
   border: none;
@@ -1086,7 +1122,7 @@ input:focus + label {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0 10%; }
+  margin: 0 3%; }
 
 .input-style {
   width: 90%; }
@@ -1131,16 +1167,26 @@ img {
   clip: rect(0 0 0);
   overflow: hidden; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  svg {
+    width: 220px;
+    bottom: 130px; }
+  .lyric-search {
+    margin: 0; } }
+
+@media (max-width: 1040px) {
   .hero h1 {
     font-size: 4rem; }
   .input-style,
   #get-lyrics,
   #reset-form,
   p.lyrics {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  svg {
+    width: 180px;
+    bottom: 90px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .hero h1 {
     font-size: 3rem; }
   .input-style,
@@ -1151,7 +1197,9 @@ img {
   .results {
     width: 85%; }
   .input-style {
-    width: 65%; } }
+    width: 65%; }
+  svg {
+    display: none; } }
 
 @media (max-width: 600px) {
   .hero h1 {
