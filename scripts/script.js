@@ -31,8 +31,46 @@ app.genres = {
     <circle cx="37" cy="14" r="1"></circle>
     <circle cx="45" cy="14" r="1"></circle>
                     </svg >`,
-    dj: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M27.864,73.404H15.31v12.554h12.555V73.404z M23.249,81.344h-3.325v-3.326h3.325V81.344z"></path><path d="M31.435,69.833H11.737V89.53h19.697V69.833z M29.65,87.744H13.523V71.619H29.65V87.744z"></path><path d="M85.754,73.404H73.199v12.554h12.555V73.404z M81.141,81.344h-3.326v-3.326h3.326V81.344z"></path><path d="M89.326,69.833H69.629V89.53h19.697V69.833z M87.539,87.744H71.415V71.619h16.124V87.744z"></path><path d="M64.68,64.363v-1.581h29.972v-3.571h-3.868v-3.094h-2.381v-4.166v-0.892h-0.892h-8.033h-1.313l0.421,0.892l0.827,1.757  H67.701v2.409H64.68V43.029H51.517l-0.151-5.256l9.478-0.275l-0.294-10.146l6.729-0.194l-0.194-6.73l-3.365,0.098l-0.36-12.377  L32.323,9.046l0.356,12.376l-3.363,0.098l0.195,6.729l6.729-0.195l0.294,10.147l9.479-0.275l0.147,5.102H32.253v1.381l-18.144,6.53  l0.021,0.119h-3.728H9.51v0.892v4.166H7.311v3.094H5.376v3.571H32.82l1.34,0.861l0.075,0.72H6.267V95h30.64V75.453h1.707  l-1.009,5.909l1.825,12.946l3.536-0.499l-1.749-12.396l1.02-5.961h12.285l-0.999,5.79l1.824,13.062l3.538-0.493L57.136,81.3  l1.009-5.847h6.013V95h30.64V64.363H64.68z M36.037,13.886l-0.041-1.373l23.896-0.691l0.04,1.374L36.037,13.886z M79.541,53.708  l0.408-0.865h6.669v3.273h-1.935v-2.409H79.541z M32.253,56.117h-2.487v-2.409H18.499l0.292-0.616l13.462-4.518V56.117z   M18.178,53.299l0.193,0.409h-1.416L18.178,53.299z M11.296,52.843h3.148l0.152,0.865h-1.813v2.409h-1.487V52.843z M33.22,91.314  H9.953V68.048H33.22V91.314z M91.111,91.314H67.844V68.048h23.268V91.314z"></path></svg>`
-
+    blues: `blues`,
+    comedy: `comedy`,
+    classical: `classical`,
+    country: `country`,
+    electronic: `electronic`,
+    holiday: `holiday`,
+    opera: `opera`,
+    jazz: `jazz`,
+    latin: `latin`,
+    pop: `pop`,
+    soundtrack: `soundtrack`,
+    dance: `dance`,
+    world: `world`,
+    alternative: `alternative`,
+    rock: `rock`,
+    vocal: `vocal`,
+    reggae: `reggae`,
+    dj: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M27.864,73.404H15.31v12.554h12.555V73.404z M23.249,81.344h-3.325v-3.326h3.325V81.344z"></path><path d="M31.435,69.833H11.737V89.53h19.697V69.833z M29.65,87.744H13.523V71.619H29.65V87.744z"></path><path d="M85.754,73.404H73.199v12.554h12.555V73.404z M81.141,81.344h-3.326v-3.326h3.326V81.344z"></path><path d="M89.326,69.833H69.629V89.53h19.697V69.833z M87.539,87.744H71.415V71.619h16.124V87.744z"></path><path d="M64.68,64.363v-1.581h29.972v-3.571h-3.868v-3.094h-2.381v-4.166v-0.892h-0.892h-8.033h-1.313l0.421,0.892l0.827,1.757  H67.701v2.409H64.68V43.029H51.517l-0.151-5.256l9.478-0.275l-0.294-10.146l6.729-0.194l-0.194-6.73l-3.365,0.098l-0.36-12.377  L32.323,9.046l0.356,12.376l-3.363,0.098l0.195,6.729l6.729-0.195l0.294,10.147l9.479-0.275l0.147,5.102H32.253v1.381l-18.144,6.53  l0.021,0.119h-3.728H9.51v0.892v4.166H7.311v3.094H5.376v3.571H32.82l1.34,0.861l0.075,0.72H6.267V95h30.64V75.453h1.707  l-1.009,5.909l1.825,12.946l3.536-0.499l-1.749-12.396l1.02-5.961h12.285l-0.999,5.79l1.824,13.062l3.538-0.493L57.136,81.3  l1.009-5.847h6.013V95h30.64V64.363H64.68z M36.037,13.886l-0.041-1.373l23.896-0.691l0.04,1.374L36.037,13.886z M79.541,53.708  l0.408-0.865h6.669v3.273h-1.935v-2.409H79.541z M32.253,56.117h-2.487v-2.409H18.499l0.292-0.616l13.462-4.518V56.117z   M18.178,53.299l0.193,0.409h-1.416L18.178,53.299z M11.296,52.843h3.148l0.152,0.865h-1.813v2.409h-1.487V52.843z M33.22,91.314  H9.953V68.048H33.22V91.314z M91.111,91.314H67.844V68.048h23.268V91.314z"></path></svg>`,
+    grunge: `grunge`,
+    punk: `punk`,
+    americana: `americana`,
+    bluegrass: `bluegrass`,
+    hardcore: `hardcore`,
+    house: `house`,
+    ambient: `ambient`,
+    downtempo: `downtempo`,
+    electronica: `electronica`,
+    rap: `rap`,
+    ccm: `ccm`,
+    disco: `disco`,
+    funk: `funk`,
+    soul: `soul`,
+    rockabilly: `rockabilly`,
+    musicals: `musicals`,
+    standards: `standards`,
+    hawaii: `hawaii`,
+    africa: `africa`,
+    europe: `europe`,
+    folk: `folk`,
+    bebop: `bebop`
 }
 
 //call to get genre
@@ -52,10 +90,17 @@ app.getGenre = () => {
     })
         .then(function (response) {
             if (response.message.body.track_list[0]) {
-                app.userChoice = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name;
+                console.log(response);
+                app.userChoice = response.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name.toLowerCase();
             } else {
                 console.log('Genre search failed');
-                app.userChoice = 'defaultStyles';
+                app.styleReset();
+            }
+            // using default styles for genres that are either more obscure or harder to target
+            if (app.userChoice == `children's music` || app.userChoice == 'singer/songwriter' || app.userChoice == 'r&b/soul' || app.userChoice == 'hip hop/rap' || app.userChoice == 'christian & gospel' || app.userChoice == 'easy listening' || app.userChoice == 'instrumental' || app.userChoice == 'j-pop' || app.userChoice == 'k-pop' || app.userChoice == 'college rock' || app.userChoice == 'indie rock' || app.userChoice == 'new wave' || app.userChoice == 'classical crossover' || app.userChoice == 'contemporary bluegrass' || app.userChoice == 'contemporary country' || app.userChoice == `jungle/drum'n'bass` || app.userChoice == 'big band' || app.userChoice == 'alternative folk' || app.userChoice == 'contemporary folk' || app.userChoice == 'traditional folk' || app.userChoice == 'alternative rap' || app.userChoice == 'hip - hop' || app.userChoice == 'underground rap' || app.userChoice == 'christan rap' || app.userChoice == 'christian rock' || app.userChoice == 'southern gospel' || app.userChoice == 'contemporary jazz' || app.userChoice == 'crossover jazz' || app.userChoice == 'pop in spanish' || app.userChoice == 'latin urban' || app.userChoice == 'alternative & rock in spanish' || app.userChoice == 'adult contemporary' || app.userChoice == 'pop/rock' || app.userChoice == 'adult alternative' || app.userChoice == 'arena rock' || app.userChoice == 'blues - rock' || app.userChoice == 'death metal/black metal' || app.userChoice == 'hard rock' || app.userChoice == 'heavy metal' || app.userChoice == 'prog - rock/art rock' || app.userChoice == 'idm/experimental' || app.userChoice == 'foreign cinema' || app.userChoice == 'original score' || app.userChoice == 'vocal jazz' || app.userChoice == 'indie pop' || app.userChoice == 'spoken word' || app.userChoice == 'french pop') {
+                app.styleReset();
+            } else {
+                app.newStyles();
             }
         });
 }
@@ -102,7 +147,7 @@ app.newStyles = () => {
 
 // document ready
 $(function () {
-    
+
     // 'Pick a Song' button event listening
     $('.begin-button').on('click', function () {
         // get user search parameters from form
